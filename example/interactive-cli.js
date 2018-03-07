@@ -72,22 +72,50 @@ process.stdin.on('data', function (key) {
 
     if (key === '0') {
         client.lights().forEach(function (light) {
-            light.setMode(0);
+            //light.setMode(0);
+
+            light.setMode(0, function (err) {
+                if (err) {
+                    console.log(`${light.name} set Mode 0 failed`);
+                }
+                console.log(`${light.name} set Mode 0 success`);
+            });
         });
     }
     else if (key === '1') {
         client.lights().forEach(function (light) {
-            light.setMode(1);
+            //light.setMode(1);
+
+            light.setMode(1, function (err) {
+                if (err) {
+                    console.log(`${light.name} set Mode 1 failed`);
+                }
+                console.log(`${light.name} set Mode 1 success`);
+            });
         });
     }
     else if (key === '2') {
         client.lights().forEach(function (light) {
-            light.setMode(2);
+            //light.setMode(2);
+
+            light.setMode(2, function (err) {
+                if (err) {
+                    console.log(`${light.name} set Mode 2 failed`);
+                }
+                console.log(`${light.name} set Mode 2 success`);
+            });
         });
     }
     else if (key === '3') {
         client.lights().forEach(function (light) {
-            light.setMode(3);
+            //light.setMode(3);
+
+            light.setMode(3, function (err) {
+                if (err) {
+                    console.log(`${light.name} set Mode 3 failed`);
+                }
+                console.log(`${light.name} set Mode 3 success`);
+            });
         });
     }
 
