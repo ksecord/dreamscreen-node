@@ -2,12 +2,12 @@
   "name": "dreamscreen-node",
   "description": "Node.js implementation of the DreamScreen API",
   "version": "0.0.1",
-  "author": "Kyle Second",
+  "author": "Kyle Secord",
   "bugs": {
     "url": "https://github.com/ksecord/dreamscreen-node/issues"
   },
   "homepage": "https://github.com/ksecord/dreamscreen-node",
-  "license": "",
+  "license": "MIT",
   "main": "./lib/dreamscreen",
   "optionalDependencies": {},
   "repository": {
