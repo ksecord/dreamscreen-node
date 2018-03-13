@@ -1,0 +1,21 @@
+{
+  "name": "dreamscreen-node",
+  "description": "Node.js implementation of the DreamScreen API",
+  "version": "0.0.1",
+  "author": "Kyle Second",
+  "bugs": {
+    "url": "https://github.com/ksecord/dreamscreen-node/issues"
+  },
+  "homepage": "https://github.com/ksecord/dreamscreen-node",
+  "license": "",
+  "main": "./lib/dreamscreen",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksecord/dreamscreen-node.git"
+  },
+  "dependencies": {
+    "eventemitter3": "^3.0.1",
+    "lodash": "^4.17.5"
+  }
+}
