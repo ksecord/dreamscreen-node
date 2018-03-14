@@ -35,9 +35,8 @@ console.log('Press 2, set all music mode');
 console.log('Press 3, set all ambient mode');
 console.log('Press r, set all red');
 console.log('Press g, set all green');
-
-// console.log('Press 8 to show debug messages');
-// console.log('Press 9 to hide debug messages');
+console.log('Press D to show debug messages');
+console.log('Press d to hide debug messages (default is hidden)');
 console.log('Press q or [CTRL + C] to exit\n');
 
 process.stdin.setEncoding('utf8');
@@ -107,13 +106,13 @@ process.stdin.on('data', function (key) {
         });
     }
 
-    // else if (key === '8') {
-    //     client.setDebug(true);
-    //     console.log('Debug messages are shown');
-    // } else if (key === '9') {
-    //     client.setDebug(false);
-    //     console.log('Debug messages are hidden');
-    // } 
+    else if (key === 'D') {
+        client.setDebug(true);
+        console.log('Debug messages are now shown');
+    } else if (key === 'd') {
+        client.setDebug(false);
+        console.log('Debug messages are now hidden');
+    }
 
     else if (key === '\u0003' || key === 'q') { // Ctrl + C
         client.destroy();
