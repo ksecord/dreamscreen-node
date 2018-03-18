@@ -1,7 +1,7 @@
 {
   "name": "dreamscreen-node",
   "description": "Node.js implementation of the DreamScreen API",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Kyle Secord",
   "bugs": {
     "url": "https://github.com/ksecord/dreamscreen-node/issues"
